@@ -22,7 +22,6 @@ jobs:
           path: /tmp/coverage
       - slack/notify:
           channel: '#general'
-          context: calculator_assignment_with_orbs
           custom: |
             {
               "blocks": [
@@ -40,3 +39,4 @@ workflows:
   send-notification:
     jobs:
       - build
+        context: calculator_assignment_with_orbs
