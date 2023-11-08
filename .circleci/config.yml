@@ -25,13 +25,15 @@ jobs:
           custom: |
             {
               "blocks": [
-                "type": "section",
-                "fields": [
-                  {
-                    "type": "plain_text",
-                    "text": "This is Nathaniel Reeves submitting the slack assignment"
-                  }
-                ]
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "plain_text",
+                      "text": "This is Nathaniel Reeves submitting the slack assignment"
+                    }
+                  ]
+                }
               ]
             }
           event: always
