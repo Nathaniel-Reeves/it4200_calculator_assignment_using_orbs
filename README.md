@@ -6,16 +6,28 @@ Objective: The purpose of this assignment is to guide you through the process of
 
 ## Instructions:
 
-### Part 1: Setting Up the CircleCI Orb 1. 
-Use the previous project (Calculator App) for this assignment. 2. Configure the .circleci/config.yml file with the following: - Include the CircleCI/Slack orb from the CircleCI orb registry - Checkout the repository code. - Install project dependencies using npm. - Run unit tests using a testing framework. - Generate a code coverage report using a code coverage tool. - Store the test results and coverage report as artifacts. - Alert on Slack on at the end of your pipeline with a custom message stating “This is <> submitting the slack assignment”
+### Part 1: Setting Up the CircleCI Orb 
+1. Use the previous project (Calculator App) for this assignment. 
+2. Configure the .circleci/config.yml file with the following: 
+    - Include the CircleCI/Slack orb from the CircleCI orb registry 
+    - Checkout the repository code. 
+    - Install project dependencies using npm. 
+    - Run unit tests using a testing framework. 
+    - Generate a code coverage report using a code coverage tool. 
+    - Store the test results and coverage report as artifacts. 
+    - Alert on Slack on at the end of your pipeline with a custom message stating “This is <> submitting the slack assignment”
 
 ### **Part 2: Documentation 
-Write documentation on your process with the assignment and the knowledge gained along with some of the pitfalls to avoid. Include the following points: - Documentation should be written in markdown - Describe the process of setting up the CircleCI pipeline to handle slack notifications with examples
+Write documentation on your process with the assignment and the knowledge gained along with some of the pitfalls to avoid. Include the following points: 
+- Documentation should be written in markdown 
+- Describe the process of setting up the CircleCI pipeline to handle slack notifications with examples
 
 ## Submission Guidelines: 
-- Submit your CircleCI YAML files and documentation to GitHub Classroom  as well has have your Slack message delivered to the “#general” channel on Slack
+- Submit your CircleCI YAML files and documentation to GitHub Classroom as well has have your Slack message delivered to the “#general” channel on Slack
 
 ## Grading Criteria: 
-- Successful message sent to Slack from the Slack Bot. - Accurate documentation that would allow another student to reproduce your steps. - Accurate and working CircleCI YAML
+- Successful message sent to Slack from the Slack Bot. 
+- Accurate documentation that would allow another student to reproduce your steps. 
+- Accurate and working CircleCI YAML
 
 Note: This assignment is designed to provide hands-on experience in configuring a CircleCI pipeline to use Orbs, third party API’s and communication about the state of your pipeline. Your documentation will demonstrate your understanding of the assignment’s concepts and their real-world applications.

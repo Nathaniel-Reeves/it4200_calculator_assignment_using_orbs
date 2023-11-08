@@ -1,12 +1,12 @@
 version: 2.1
-executors:
-  node-executor:
-    docker:
-      - image: cimg/node:20.9.0
+
+orbs:
+  slack: circleci/slack@4.9.3
 
 jobs:
   build:
-    executor: node-executor
+    docker:
+      - image: 'cimg/base:stable'
     steps:
       - checkout
       - run:
@@ -20,3 +20,18 @@ jobs:
           command: npm run coverage
       - store_artifacts:
           path: /tmp/coverage
+      - slack/notify:
+        channel: '#general'
+        context: calculator_assignment_with_orbs
+        custom: |
+          {
+            "blocks": [
+              "type": "section",
+              "fields": [
+                {
+                  "type": "plain_text",
+                  "text": "This is <> submitting the slack assignment"
+                }
+              ]
+            ]
+          }
